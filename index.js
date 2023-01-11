@@ -1,16 +1,26 @@
-// Code your solutions in this file
-const names = ["Guadalupe", "Ollie", "Aki"]
-const event = ["surpreise"]
+// // Code your solutions in this file
 
-function writeCards(names, event) {
-    for (let i=0; i < names.length; i++) {
-        console.log(`Thank you, ${name[i]}, for the wonderful ${event} gift!`);
-        debugger;
-        }
+const name = ["Charlie", "Samip", "Ali"];
+const event = "surprise"
 
-    return (names, event);
-    }
+function writeCards(name, event){
+  let thankYouCards = []
+  for (let i=0; i<name.length; i++){
+    thankYouCards.push(`Thank you, ${name[i]}, for the wonderful ${event} gift!`)
+  }
+  return thankYouCards
+}
+writeCards(thankYouCards)
 
+
+
+writeCards(["Charlie", "Samip", "Ali"], "birthday");
+
+let countdown = 0;
+
+while (countdown < 10) {
+  console.log(countdown--);
+}
 
 writeCards(["Guadalupe", "Ollie", "Aki"], "surprise");
 
@@ -22,3 +32,4 @@ function countDown() {
     }
 }
 countDown(10);
+
